@@ -1,0 +1,32 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgba(88, 15, 69, 0.68);
+}
+.container {
+  width: 700px;
+  background: rgba(128, 0, 98, 0.708);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.wrapper {
+  border-radius: 8px;
+  border: 1px solid grey;
+}
+
+.text-input textarea {
+  height: 240px;
+  width: 100%;
+}

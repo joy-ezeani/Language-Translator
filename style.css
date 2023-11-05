@@ -26,7 +26,173 @@ body {
   border: 1px solid grey;
 }
 
+.wrapper .text-input {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+.text-input .from-text {
+  border-right: 2px solid grey;
+}
+
+.text-input .to-text::placeholder,
+.text-input .to-text {
+  color: aliceblue;
+}
+
 .text-input textarea {
   height: 240px;
   width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  resize: none;
 }
+
+.controls {
+  list-style: none;
+  padding: 12px 15px;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls .row.from .icons {
+  padding-right: 15px;
+  border-right: 1px solid grey;
+}
+.controls .row.to .icons {
+  padding-left: 15px;
+  border-left: 1px solid grey;
+}
+.controls .icons {
+  width: 38%;
+}
+.controls .icons i {
+  justify-content: center;
+  color: #9f9f9f;
+  font-size: 0.9rem;
+  cursor: pointer;
+  width: 50px;
+}
+.controls .row select {
+  border: none;
+  outline: none;
+  color: aliceblue;
+  background: inherit;
+  font-size: 1.1rem;
+}
+.controls .row select option:checked {
+  background-color: rgba(128, 0, 98, 0.708);
+}
+.controls .row select option:not(:checked) {
+  background-color: rgba(128, 0, 98, 0.708);
+}
+
+.controls .exchange {
+  color: aliceblue;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.container button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  outline: none;
+  cursor: pointer;
+  color: rgba(128, 0, 98, 0.708);
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+
+  .controls {
+    padding: 5px 7px;
+  }
+
+  .controls .row.from .icons {
+    padding-right: 2px;
+  }
+  .controls .row.to .icons {
+    padding-left: 2px;
+  }
+  .controls .icons {
+    width: 28%;
+  }
+  .controls .icons i {
+    font-size: 0.8rem;
+    width: 30px;
+  }
+  .controls .row select {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 435px) {
+  .container {
+    width: 315px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .wrapper {
+    border-radius: 8px;
+  }
+
+  .text-input textarea {
+    height: 300px;
+    font-size: 0.9rem;
+    padding: 5px 7px;
+  }
+
+  .controls {
+    padding: 5px 7px;
+  }
+
+  .controls .row.from .icons {
+    padding-right: 3px;
+  }
+  .controls .row.to .icons {
+    padding-left: 3px;
+  }
+  .controls .icons {
+    width: 35%;
+  }
+  .controls .icons i {
+    font-size: 0.7rem;
+    width: 20px;
+  }
+  .controls .row select {
+    width: 70px;
+    font-size: 0.8rem;
+  }
+
+  .controls .exchange {
+    font-size: 0.9rem;
+  }
+  .container button {
+    width: 100%;
+    padding: 9px;
+    font-size: 1rem;
+  }
+}
+

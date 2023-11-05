@@ -12,7 +12,7 @@
         <div class="text-input">
           <textarea class="from-text" placeholder="Enter text"></textarea>
           <textarea
-            class="from-to"
+            class="to-text"
             placeholder="Translation"
             readonly
             disabled
@@ -21,25 +21,17 @@
         <ul class="controls">
           <li class="row from">
             <div class="icons">
-              <i class="fas fa-volume-up"></i>
-              <i class="fas fa-copy"></i>
+              <i id="from" class="fas fa-volume-up i"></i>
+              <i id="from" class="fas fa-copy i"></i>
             </div>
-            <select>
-              <option value="en-US">English</option>
-              <option value="en-IN">Hindi</option>
-              <option value="en-NP">Nepali</option>
-            </select>
+            <select></select>
           </li>
           <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
           <li class="row to">
-            <select>
-              <option value="en-NP">Nepali</option>
-              <option value="en-IN">Hindi</option>
-              <option value="en-US">English</option>
-            </select>
+            <select></select>
             <div class="icons">
-              <i class="fas fa-volume-up"></i>
-              <i class="fas fa-copy"></i>
+              <i id="to" class="fas fa-volume-up i"></i>
+              <i id="to" class="fas fa-copy i"></i>
             </div>
           </li>
         </ul>
@@ -52,5 +44,9 @@
       src="https://kit.fontawesome.com/08f31fca99.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- js -->
+    <script src="countries.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

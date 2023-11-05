@@ -157,6 +157,10 @@ li,
   .wrapper {
     border-radius: 8px;
   }
+  .text-input .to-text::placeholder,
+.text-input .to-text {
+  color: white;
+}
 
   .text-input textarea {
     height: 300px;
